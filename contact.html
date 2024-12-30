@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GULLY SPORTS</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #2d98da, #1abc9c);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        /* Navigation Bar */
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            z-index: 1000;
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1.5em;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background-color: #1abc9c;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Animation for navigation */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Main container */
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            margin-top: 60px; /* To avoid nav overlap */
+        }
+
+        /* Header section */
+        header {
+            margin-bottom: 2em;
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 1em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-style: italic;
+        }
+
+        /* Contact form */
+        .contact-form {
+            max-width: 800px;
+            margin-top: 3em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2em;
+            border-radius: 10px;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 1.5em;
+            background: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border: 2px solid #1abc9c;
+            outline: none;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #1abc9c;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://gullysports.in/wp-content/uploads/2024/09/Logo-Gully.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1; /* Keep the background behind the content */
+        }
+
+
+        .contact-form button:hover {
+            background-color: #16a085;
+            transform: scale(1.05);
+        }
+
+        /* Animation for form */
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Map Section */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Footer section */
+        footer {
+            margin-top: 4em;
+            font-size: 1rem;
+            color: #fff;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            color: #1abc9c;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="homepg.html">Home</a></li>
+            <li><a href="C:\Users\HP\Desktop\categories.html">Shop</a></li>
+            <li><a href="C:\Users\HP\Desktop\categories.html">Categories</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="C:\Users\HP\Desktop\login page.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header section -->
+        <header>
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Get in touch with us.</p>
+        </header>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us A Message</h2>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 GULLY SPORTS. All Rights Reserved.</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </footer>
+
+</body>
+
+</html>
